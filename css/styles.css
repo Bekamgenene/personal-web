@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif; /* A nice serif font for a more sophisticated feel */
+    background-color: #f5f5dc; /* Beige background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #a0522d; /* Sienna brown */
+    font-weight: 600;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+td, th {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #f0f0e0;
+}
+
+/* Image Styles */
+img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* List Styles */
+ul, ol {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Horizontal Rule Styles */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #8B4513; /* SaddleBrown */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #A0522D; /* Sienna */
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #a0522d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(160, 82, 45, 0.5);
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8B4513;
+}
+
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Apply Animation with Delay */
+h1 { animation: fadeIn 1s ease-in-out 0.2s forwards; } /* 0.2s delay */
+h2 { animation: fadeIn 1s ease-in-out 0.4s forwards; } /* 0.4s delay */
+h3 { animation: fadeIn 1s ease-in-out 0.6s forwards; } /* 0.6s delay */
+p { animation: fadeIn 1s ease-in-out 0.8s forwards; }   /* 0.8s delay */
+.table-row { animation: fadeIn 1s ease-in-out 1s forwards;} /*Example for table rows*/
